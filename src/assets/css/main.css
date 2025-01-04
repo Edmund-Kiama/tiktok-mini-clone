@@ -1,0 +1,112 @@
+
+
+ /* css for the video and things within it */
+
+ .reels-container .container,
+ .reels-container .video2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.reels-container .container .car1-video,
+    .reels-container .video2 .car1-video {
+    object-fit: cover; 
+    width: 480px;
+    border-radius: 20px;
+    margin-left: 130px;
+}
+.reels-container .video-description {
+    position : absolute;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    align-self: flex-end;
+    bottom: 20px;
+    width: 21%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.reels-container .video-description p{
+    margin: 5px;
+}
+.reels-container .video-description .username{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+.reels-container .video-description .description {
+    color: rgba(255, 255, 255, 0.9);
+}
+.reels-container .video-description .hash-tags {
+    word-spacing: 5px;
+    color: rgb(255, 255, 255, 0.75);
+}
+.reels-container .video-description .music-used {
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+.reels-container .video-description .music-used img {
+    width:10px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+} 
+
+/* css for interactive icons */
+
+.reels-container .interact-icons {
+    align-self: last baseline;
+}
+
+.reels-container .interact-icons div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.reels-container .interact-icons .profile{
+    width: 60px;
+    padding: 10px;
+}
+
+.reels-container .interact-icons .profile p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.reels-container .interact-icons .profile .profile-pic {
+    width: 60px;
+    border-radius: 50px;
+}
+.reels-container .interact-icons .like ,
+.reels-container .interact-icons .save ,
+.reels-container .interact-icons .share ,
+.reels-container .interact-icons .comment {
+    width: 40px;
+    justify-content: center;
+    padding-left: 10px;
+}
+.reels-container .interact-icons .like .image,
+.reels-container .interact-icons .save .image,
+.reels-container .interact-icons .share .image,
+.reels-container .interact-icons .comment .image{
+    background-color: rgb(235, 235, 235);
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 100px;
+}
+.reels-container .interact-icons .like p,
+.reels-container .interact-icons .share p,
+.reels-container .interact-icons .save p,
+.reels-container .interact-icons .comment p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.reels-container .interact-icons .like .like-logo ,
+.reels-container .interact-icons .save .saves ,
+.reels-container .interact-icons .share .shares,
+.reels-container .interact-icons .comment .comments
+{
+    width: 35px;
+}

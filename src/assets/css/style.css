@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* nav styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.541);
+    background-color: white;
+}
+
+nav img.tiktok-logo {
+    background-color: white;
+    width: 130px;
+    margin: 10px;
+    margin-left: 5px;
+    object-fit: contain;
+}
+
+nav .search {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .search input {
+    flex: none;
+    font-size: large;
+    color: #a8a8a8;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 400px;
+    border-width: 0;
+    border-right-width:1px solid rgb(192, 192, 192);
+    background-color: #F1F1F2;
+    padding: 10px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav .search button {
+    flex: none;
+    font-size: larger;
+    padding: 14.5px;
+    padding-left: 10px;
+    color: #a8a8a8;
+    border-width: 0;
+    border-left: #7272723d solid 1px ;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative; 
+    border: none;
+    cursor: pointer;
+}
+
+nav .search button::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    height: 30px;
+    width: 1px; 
+    background-color: rgba(192, 192, 192, 0.63);
+}
+
+nav .details {
+    margin-right: 5px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+nav .details .upload {
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 1px solid rgba(192, 192, 192, 0.918) ;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .details .upload span {
+    font-size: xx-large;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+nav .details .send {
+    border-width: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+nav .details img#send {
+    width: 30px;
+}
+
+nav .details .messages {
+    border-width: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+nav .details img#messages {
+    width: 30px;
+}
+
+nav .details #profile-picture {
+    width: 50px;
+    border-radius: 50px;
+} 
+
+/* Mobile Nav Bar Styling */
+nav .details-mobile button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+div .drop-down {
+    width: 130px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    float: right;
+}
+
+div .drop-down .mobile-upload {
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    font-weight: bolder;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+div .drop-down .mobile-upload:hover {
+    background-color:#F1F1F2;
+}
+
+div .drop-down .mobile-upload span {
+    font-size: xx-large;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+div .drop-down .mobile-send {
+    border-width: 0;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: transparent;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+div .drop-down .mobile-send:hover {
+    background-color: #F1F1F2;
+}
+
+div .drop-down img#mobile-send {
+    width: 30px;
+}
+
+div .drop-down .mobile-messages {
+    border-width: 0;
+    width: 100%;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+div .drop-down .mobile-messages:hover{
+    background-color:#F1F1F2;
+}
+div .drop-down img#mobile-messages {
+    width: 30px;
+}
+
+div .drop-down .profile{
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div .drop-down .profile:hover{
+    background-color: #F1F1F2;
+}
+
+div .drop-down #mobile-profile-picture {
+    width: 50px;
+    border-radius: 50px;    
+}
+
+.sideBar{
+    display: block;
+    width: 300px;
+    position:fixed;
+}
+.sideBar .icons {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.533) ;
+}
+
+.sideBar .icons img{
+    width: 30px;
+}
+
+.sideBar .icons #home {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #E4535E;
+    background-size: contain;
+}
+
+.sideBar .icons #home:hover{
+    background-color: #F1F1F2;;
+}
+
+.sideBar .icons #home img{
+    filter: invert(51%) sepia(50%) saturate(9010%) hue-rotate(326deg) brightness(100%) contrast(95%);
+}
+
+.sideBar .icons #following {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sideBar .icons #following:hover{
+    background-color: #F1F1F2;;
+}
+
+.sideBar .icons #live {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sideBar .icons #live:hover{
+    background-color: #F1F1F2;
+}
+
+.sideBar .suggested-accounts {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.533) ;
+}
+
+.sideBar .suggested-accounts h2 {
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.sideBar .suggested-accounts .contains-suggest-acc {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    cursor: pointer;
+}
+.sideBar .suggested-accounts .contains-suggest-acc:hover {
+    background-color: #F1F1F2;
+}
+
+.sideBar .suggested-accounts .contains-suggest-acc #profile2 {
+    width: 50px;
+    border-radius: 100px;
+}
+
+.sideBar .suggested-accounts .contains-suggest-acc div{
+    padding-left: 10px;
+}
+
+.sideBar .suggested-accounts .contains-suggest-acc div div#username {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sideBar .suggested-accounts .contains-suggest-acc div p {
+    font-weight: lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(71, 71, 71);
+    float: left;
+    padding-left: 10px;
+}
+
+.sideBar .suggested-accounts .contains-suggest-acc div div #verified {
+    width: 20px;
+}
+.sideBar .suggested-accounts .see-all {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 20px;
+    padding: 5px;
+    width: 75px;
+    border-radius: 3px;
+    color: #E4535E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.sideBar .suggested-accounts .see-all:hover {
+    color: white;
+    background-color: #E4535E;
+}
+
+.sideBar .following-accounts {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.533) ;
+}
+
+.sideBar .following-accounts h2 {
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.sideBar .following-accounts .contains-suggest-acc {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    cursor: pointer;
+}
+.sideBar .following-accounts .contains-suggest-acc:hover {
+    background-color: #F1F1F2;
+}
+
+.sideBar .following-accounts .contains-suggest-acc #profile1 {
+    width: 50px;
+    border-radius: 100px;
+}
+
+.sideBar .following-accounts .contains-suggest-acc div{
+    padding-left: 10px;
+}
+
+.sideBar .following-accounts .contains-suggest-acc div div#username {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sideBar .following-accounts .contains-suggest-acc div p {
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(71, 71, 71);
+    float: left;
+    padding-left: 10px;
+}
+
+.sideBar .following-accounts .contains-suggest-acc div div #verified {
+    width: 20px;
+}
+.sideBar .following-accounts .see-all {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 20px;
+    padding: 5px;
+    width: 75px;
+    border-radius: 3px;
+    color: #E4535E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.sideBar .following-accounts .see-all:hover {
+    color: white;
+    background-color: #E4535E;
+}
+
+.sideBar .copywrite {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sideBar .copywrite p {
+    padding: 10px;
+}
+
+#mobileSideBar {
+    width: 100px;
+} 
+
+#mobileSideBar .suggested-accounts ,
+#mobileSideBar .following-accounts {
+    text-align: center;
+}
+
+#mobileSideBar .suggested-accounts h2 ,
+#mobileSideBar .following-accounts h2{
+    font-size: smaller;
+    padding-left: 0;
+}
+
+#mobileSideBar .following-accounts .see-all ,
+#mobileSideBar .suggested-accounts .see-all{
+    margin-left: 0;
+}
+
+#mobileSideBar .icons #home ,
+#mobileSideBar .icons #following ,
+#mobileSideBar .icons #live {
+    justify-content: center;
+    padding-left: 0;
+}
