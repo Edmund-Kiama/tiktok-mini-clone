@@ -9,19 +9,19 @@
     margin-bottom: 10px;
 }
 .reels-container .container .car1-video,
-    .reels-container .video2 .car1-video {
+.reels-container .video2 .car1-video {
     object-fit: cover; 
     width: 480px;
     border-radius: 20px;
     margin-left: 130px;
 }
 .reels-container .video-description {
-    position : absolute;
+    position: absolute;
     color: rgb(255, 255, 255);
     margin: 10px;
-    align-self: flex-end;
+    /* align-self: flex-end; */
     bottom: 20px;
-    width: 21%;
+    /* width: 21%; */
     font-family: Arial, Helvetica, sans-serif;
 }
 .reels-container .video-description p{
