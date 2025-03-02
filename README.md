@@ -2,6 +2,68 @@
 
 This is a Vue.js application that displays a list of videos with user data such as likes, comments, shares and saves. The app uses a component-based architecture to render the top navigation, sidebar and video content.It offers a clean and modular structure. The video content is dynamically passed as a prop to the main content component.
 
+
+## How to Use
+
+### Prerequisites
+
+- Ensure that you have the following installed:
+    1. **Node.js**: Required for running the development server.
+    2. **npm**: Package manager for managing dependencies.
+
+### Installation (Three Ways)
+**1. Clone the repo**
+- Clone this repository.
+- Navigate into the project folder.
+- Install the necessary dependencies:
+  ```ssh
+  npm install
+  ```
+- To start the development server, run the following command
+   ```ssh
+   npm run dev
+   ```
+- Once the server is running, open your browser and go to: http://localhost/5173    
+   
+**2. Build the docker image**
+
+This project includes a Dockerfile for serving the application using Nginx. To run the project using Docker, follow these steps:
+
+- Build the Docker Image:
+   ```ssh
+   docker build -t tiktok-clone .
+   ```
+- Run the Docker Container:
+  ```ssh
+  docker run -p 8080:5173 tiktok-clone
+  ```
+Access the App:
+- Open http://localhost/8080 in your browser.
+
+**1. Pull Docker Image**
+
+You can also pull the image from edmundkiama/rick-and-morty.   
+To pull the image, follow these steps:
+   ```ssh
+   docker pull edmundkiama/tiktok:latest
+   ```
+- pull the image from my docker hub
+   ```ssh
+   docker run -p 8080:5173 --name mycontainer1 edmundkiama/tiktok:latest
+   ```
+- run the image by containerizing it
+  
+Access the App:
+Open http://localhost/8080 in your browser.
+
+
+## Technologies Used
+
+1. **Vue.js**: A progressive JavaScript framework used for building the user interface and handling dynamic data binding.
+2. **JavaScript**: The programming language used to manage the data and functionality of the application.
+3. **CSS**: Used to style the components and layout of the application.
+4. **Docker**: Containerize the image
+   
 ## Features
 
 ### Core Functionality
@@ -52,30 +114,6 @@ The application consists of the following main components:
 - **topNav.vue**: This component is rendered in the header of the application. It could contain navigation links to other parts of the site.
 - **SideBar.vue**: The sidebar could include extra controls or filters for managing videos, or provide links to other sections of the application.
 - **mainContent.vue**: This component receives the videoList as a prop and displays the videos dynamically. It could display the profile picture, video file, and engagement metrics (likes, comments, shares, and saves).
-
-## How to Use
-
-### Prerequisites
-
-- Ensure that you have the following installed:
-    1. **Node.js**: Required for running the development server.
-    2. **npm**: Package manager for managing dependencies.
-
-### Installation
-
-1. Clone this repository.
-2. Navigate into the project folder.
-3. Install the necessary dependencies:`npm install`
-
-### Running the Application
-1. To start the development server, run the following command
-2. Once the server is running, open your browser and go to:
-
-## Technologies Used
-
-1. **Vue.js**: A progressive JavaScript framework used for building the user interface and handling dynamic data binding.
-2. **JavaScript**: The programming language used to manage the data and functionality of the application.
-3. **CSS**: Used to style the components and layout of the application.
 
 ## License
 
